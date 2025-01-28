@@ -97,7 +97,7 @@ nav a {
 nav a { text decoration: none;
   display: inline-block; }
 nav a:link { color: #012A4A; }
-nav a:visited { color: #FFFFFF; }
+nav a:visited { color: #012A4A;}
 nav a:hover { color: #FFFFFF;
 text-shadow: 2px 1px black;}
 
