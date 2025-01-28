@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+
+* { box sizing: border-box; }
+
+html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.png {
+  display: inline-block;
+  float: right;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  height: fit-content;
+  background-color: #468FAF;
+}
+
+header {
+  margin: 0;
+  background-color: #2a6f97;
+  padding: 10px;
+  text-align: center;
+  font-family: "Dela Gothic One", serif;
+  padding: 30px;
+  color: #e7ecef;
+  text-shadow: 2px 2px black;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  color: #;
+  font-family: "Dela Gothic One", serif;
+  text-shadow: 2px 1px antiquewhite;
+}
+
+h4 {
+  font-family: "Dela Gothic One", serif;
+  text-shadow: 2px 1px antiquewhite;
+}
+
+p {
+  font-family: "Gabarito", serif;
+  margin: 0;
+  width: 75%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9d6e5;
+  margin: 0;
+  font-size: 1.5em;
+  position: sticky;
+  top: 0;
+  text-shadow: 2px 1px antiquewhite;
+}
+
+section {
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  font-family: "Passion One", serif;
+  font-size: 1.2em;
+
+}
+
+.navbar-links li a {
+  padding: .5rem;
+  display: block;
+}
+
+nav a { text decoration: none;
+  display: inline-block; }
+nav a:link { color: #012A4A; }
+nav a:visited { color: #FFFFFF; }
+nav a:hover { color: #FFFFFF;
+text-shadow: 2px 1px black;}
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+nav {
+  flex-direction: column;
+  align-items: column;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px 20px;
+  height: 100%;
+  margin: 0;
+  margin: auto;
+  width: 80%;
+  background-image: linear-gradient(to bottom, #89c2d9, #e7ecef);
+}
+
+.content {
+  padding: 2rem 3rem;
+}
+
+blockquote {
+  font-family: "Gabarito", serif;
+}
+
+ul {
+  font-family: "Gabarito", serif;
+}
+
+.info {
+  padding-bottom: 0.25rem;
+  font-family: "Gabarito", serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #468FAF;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .toggle-button {
+    display: flex;
+  }
+  
+  .content {
+    padding: 15px 30px;
+  }
+  
+  .png {
+    float: none;
+    margin: 0 auto 0 auto;
+    display: block;
+  }
+  
+  nav {
+    order: 1;
+  }
+  
+  header {
+    order: 2;
+  }
+  
+  main {
+    order: 3;
+  }
+  
+  footer {
+    order: 4;
+  }
+  
+  .navbar-links {
+    flex-direction: column;
+  }
+  
+  .navbar-links ul li {
+    text-align: center;
+    border-bottom: 1px solid #2A6F97;
+  }
+  
+  .mynav {
+    text-align: center;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+  }
+  
+  .toggle-button {
+    display: flex;
+  }
+  
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+  
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .png {
+    float: none;
+    margin: auto;
+    height: 220px;
+  }
+  
+  header {
+    font-size: 0.75rem;
+  }
+  
+  h2 {
+    margin: auto;
+  }
+  
+  .info {
+    margin: left;
+  }
+
+.navbar-links ul {
+  padding: 0px;
+}
+  
+}
